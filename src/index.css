@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: #eee;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .fetch-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #FF9900;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .fetch-button:hover {
+    background-color: #ff9900d7;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .pagination {
+    margin-top: 10px;
+  }
+  
+  button.active {
+    background-color: #FF9900;
+    color: white;
+  }
+  
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 4px;
+    width: 80%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .custom-loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000 10%, #FF9900) content-box;
+    -webkit-mask: repeating-conic-gradient(#0000 0deg, #000 1deg 20deg, #0000 21deg 36deg),
+      radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 calc(100% - 8px));
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+    animation: s4 1s infinite steps(10);
+  }
+  
+  @keyframes s4 {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
+  .spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
