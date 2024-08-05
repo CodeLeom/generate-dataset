@@ -155,7 +155,7 @@ const DatasetGen = () => {
               <tbody>{renderTableRows()}</tbody>
             </table>
             <div className="pagination">{renderPagination()}</div>
-            <button onClick={handleCopyLink} style={{ marginTop: '20px' }}>
+            <button onClick={handleCopyLink} style={{ marginTop: '20px' }} className='fetch-button'>
               Copy Dataset Link
             </button>
           </div>
