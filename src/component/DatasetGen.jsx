@@ -22,7 +22,7 @@ const DatasetGen = () => {
 
     setLoading(true);
     try {
-      const response = await fetch(`${BASE_URL}/services/generate-data`, {
+      const response = await fetch(`${BASE_URL}/services/generate-data/`, {
         method: 'POST',
         headers: {
           'X-AUG-KEY': API_KEY,
