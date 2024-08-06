@@ -116,13 +116,18 @@ const DatasetGen = () => {
   return (
     <div className="container">
       <div className="input-group">
-        <input
-          type="text"
-          value={prompt}
-          onChange={(e) => setPrompt(e.target.value)}
-          placeholder="Enter your dataset prompt"
-          className="input-field"
-        />
+        <div className="input-row">
+           <label htmlFor="prompt">Prompt:</label>
+          <input
+            type="text"
+            value={prompt}
+            onChange={(e) => setPrompt(e.target.value)}
+            placeholder="Enter your dataset prompt"
+            className="input-field"
+          />
+        </div>
+       <div className="input-row">
+        <label htmlFor="row">Row: </label>
         <input
           type="number"
           value={rows}
@@ -130,6 +135,8 @@ const DatasetGen = () => {
           placeholder="Number of rows"
           className="input-field"
         />
+       </div>
+        
         <button onClick={handleFetchDataset} disabled={loading} className="fetch-button">
           {loading ? 'Loading...' : 'Generate Dataset'}
         </button>
